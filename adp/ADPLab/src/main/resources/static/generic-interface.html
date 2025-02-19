@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>
+        LSBU
+    </title>
+    <style>
+        function init() {
+       document.getElementById("sendbutton").addEventListener("click", function() { send() });
+    }
+
+    function send() {
+       alert("You called the send function!");
+
+    </style>
+
+</head>
+
+<body>
+<!--everything in the body is shown in the web -->
+<h1> HTTP method </h1>
+<select id='methodselector'>
+    <option>GET</option>
+    <option>POST</option>
+    <option>PUT</option>
+    <option>DELETE</option>
+</select>
+
+<h3>
+    URI
+</h3>
+<input type='url' id='urifield'>
+
+<h3>
+    JSON request body
+</h3>
+<textarea id='jsonpayload'>
+
+</textarea>
+<button id=" sendbutton">
+    send
+</button>
+<h3>
+    Response
+</h3>
+<div id="jsonrecieved">
+    Response displayed here
+
+</div>
+</body>
+</html>
